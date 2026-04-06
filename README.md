@@ -7,6 +7,10 @@ y explica en lenguaje normal que dice el documento y que tienes que hacer.
 
 ---
 
+![Interfaz principal](img/interfaz.png)
+
+---
+
 ## Como funciona
 
 1. Subes un PDF o una foto del documento
@@ -15,6 +19,14 @@ y explica en lenguaje normal que dice el documento y que tienes que hacer.
 4. Recibes un resumen claro, los pasos a seguir y las fechas limite con urgencia
 
 Tipos de documento reconocidos: multas de trafico, requerimientos de Hacienda, contratos laborales, contratos de alquiler, notificaciones judiciales, comunicaciones bancarias y mas.
+
+**Ejemplo: analisis de una multa de trafico**
+
+![Ejemplo documento DGT](img/DatosDGT.png)
+
+![Resultado del analisis - parte 1](img/1.png)
+
+![Resultado del analisis - parte 2](img/2.png)
 
 ---
 
