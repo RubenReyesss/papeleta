@@ -26,6 +26,10 @@ node_modules/
 dist/
 .vite/
 
+# --- Guias internas del asistente de IA ---
+skills/
+CLAUDE.md
+
 # --- Archivos de demo que no forman parte del codigo ---
 # Los HTML de prueba son documentos falsos creados para testing local.
 img/*.html
