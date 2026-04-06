@@ -1,0 +1,80 @@
+/* Variables globales del diseno
+   Cambiar aqui afecta a toda la aplicacion */
+:root {
+  --cream:       #F4F0E8;
+  --paper:       #FDFAF4;
+  --ink:         #1A1716;
+  --stone:       #7A7060;
+  --stone-light: #A09888;
+  --border:      #E2DDD4;
+  --border-dark: #C8C2B6;
+
+  --terracotta:       #B84C37;
+  --terracotta-light: #F9EDE8;
+  --terracotta-border:#E8C4B4;
+
+  --sage:        #4A6741;
+  --sage-light:  #F2F7F0;
+  --sage-border: #C0D4BB;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:    'Epilogue', 'Segoe UI', system-ui, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Animaciones reutilizables */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-border {
+  0%, 100% { border-color: var(--terracotta-border); }
+  50%       { border-color: var(--terracotta); }
+}
+
+/* Utilidades */
+.animate-fade-up {
+  animation: fade-up 0.45s ease forwards;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}

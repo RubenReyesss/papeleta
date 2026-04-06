@@ -1,0 +1,37 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.pyo
+
+# --- Entorno ---
+# El .env contiene configuracion local y nunca debe subirse al repositorio.
+# Usar .env.example como plantilla publica.
+.env
+.env.local
+.env.*.local
+
+# --- Base de datos local ---
+# El historial SQLite es datos del usuario, no parte del codigo.
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+/data/
+
+# --- Node ---
+node_modules/
+dist/
+.vite/
+
+# --- Archivos de demo que no forman parte del codigo ---
+# Los HTML de prueba son documentos falsos creados para testing local.
+img/*.html
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
